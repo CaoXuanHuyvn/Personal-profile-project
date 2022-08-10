@@ -1,0 +1,258 @@
+:root {
+  --font-mukata: "Mukta", sans-serif;
+  --font-source-sans-pro: "Source Sans Pro", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --color: #6752ea;
+  --color-2: #ff4d1c;
+  --color-font: #000000;
+  --font-size-intro: 2rem;
+  --font-size-normal: 22px;
+}
+
+.nav {
+  height: 90px;
+  box-shadow: 8px 1px 5px #878787;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 20px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+}
+.nav__brand-logo {
+  position: relative;
+}
+.nav__brand-logo-text {
+  text-decoration: none;
+  line-height: 90px;
+  position: relative;
+  display: block;
+  z-index: 1;
+  color: var(--color-font);
+  padding-right: 8px;
+}
+.nav__brand-logo-text:hover {
+  text-decoration: none;
+  color: var(--color-font);
+}
+.nav__brand-logo-circle {
+  width: 45px;
+  height: 45px;
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 3%;
+}
+.nav__list-profile-item {
+  display: flex;
+}
+.nav__list-profile-item-list {
+  padding: 0 22px;
+}
+.nav__list-profile-item-list a {
+  color: var(--color-font);
+  padding: 45px 0;
+}
+.nav__list-profile-item-list a:hover {
+  text-decoration: none;
+}
+.nav__list-social-icon {
+  font-size: 26px;
+}
+.nav__list-social-icon-linkedin {
+  padding: 12px;
+  color: #015f93;
+  margin-left: 12px;
+  transition: 0.3s linear;
+}
+.nav__list-social-icon-linkedin:hover {
+  background-color: var(--color);
+  border-radius: 30%;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.nav__list-social-icon-facebook {
+  padding: 12px;
+  color: #4062aa;
+  margin-left: 12px;
+  transition: 0.3s linear;
+}
+.nav__list-social-icon-facebook:hover {
+  background-color: var(--color);
+  border-radius: 50%;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.nav__list-social-icon-github {
+  padding: 12px;
+  color: #000000;
+  margin-left: 12px;
+  transition: 0.3s linear;
+}
+.nav__list-social-icon-github:hover {
+  background-color: var(--color);
+  border-radius: 50%;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+
+.introducing {
+  position: relative;
+  font-family: var(--font-montserrat);
+  font-size: 36px;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introducing__title {
+  margin-left: 5rem;
+  letter-spacing: 200%;
+}
+.introducing__title-sm {
+  line-height: 200%;
+}
+.introducing__title-lg {
+  font-weight: bold;
+  line-height: 150%;
+}
+.introducing__title-lg span {
+  color: var(--color);
+  text-decoration: underline;
+}
+.introducing__img {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  display: flex;
+  margin-right: 5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.introducing__img-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  z-index: 13;
+  margin-right: 6rem;
+}
+.introducing__img-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--color-2);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.introducing__btn {
+  margin: 2rem 0 0 5rem;
+}
+.introducing__btn-right {
+  background-color: var(--color);
+  margin-right: 2rem;
+  color: white;
+  transition: 0.3s linear;
+  border-radius: 16px;
+}
+.introducing__btn-right:hover {
+  background-color: var(--color-2);
+  transition: 0.3s linear;
+  color: white;
+}
+.introducing__btn-left {
+  background-color: antiquewhite;
+  transition: 0.3s linear;
+  border-radius: 16px;
+}
+.introducing__btn-left:hover {
+  background-color: var(--color-2);
+  color: white;
+  transition: 0.3s linear;
+}
+
+.exp {
+  margin: 3rem 0;
+  background-color: rgba(128, 128, 128, 0.1);
+  font-family: var(--font-montserrat);
+  border-radius: 20px;
+  padding-bottom: 2rem;
+}
+.exp .exp-first {
+  margin-bottom: 2rem;
+}
+.exp__intro {
+  font-size: var(--font-size-intro);
+  padding: 2rem 0;
+  margin-left: 2rem;
+}
+.exp__title {
+  font-size: var(--font-size-normal);
+  margin-left: 2rem;
+  line-height: 150%;
+  padding: 1rem;
+}
+.exp__title span {
+  font-size: 3rem;
+}
+.exp__title:hover {
+  color: var(--color);
+  transition: 0.2s linear;
+}
+.exp__desc {
+  font-size: var(--font-size-normal);
+  line-height: 150%;
+}
+
+.skills {
+  font-family: var(--font-montserrat);
+  margin-left: 2rem;
+  font-size: var(--font-size-intro);
+}
+.skills .row {
+  margin-bottom: 2rem;
+}
+.skills__title {
+  margin-bottom: 2rem;
+}
+.skills__list-icon {
+  font-size: 3rem;
+}
+.skills__list-text {
+  padding: 1rem 0;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.project {
+  margin: 3rem 0;
+  font-family: var(--font-montserrat);
+}
+.project__title {
+  font-size: var(--font-size-intro);
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.project__first {
+  height: 400px;
+  background-color: var(--color);
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+.project__second {
+  height: 400px;
+  background-color: var(--color-2);
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+.project__third {
+  height: 400px;
+  background-color: cadetblue;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}/*# sourceMappingURL=styles.css.map */

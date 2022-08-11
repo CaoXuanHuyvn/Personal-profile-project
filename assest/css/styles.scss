@@ -4,6 +4,7 @@
   --font-montserrat: "Montserrat", sans-serif;
   --color: #6752ea;
   --color-2: #ff4d1c;
+  --color-3: #f4f3f8;
   --color-font: #000000;
   --font-size-intro: 2rem;
   --font-size-normal: 22px;
@@ -233,7 +234,7 @@
 
 .skills {
   font-family: var(--font-montserrat);
-  margin-left: 2rem;
+  padding-left: 3rem;
   font-size: var(--font-size-intro);
 
   .row {
@@ -245,6 +246,8 @@
     margin-bottom: 2rem;
   }
   &__list {
+    margin-left: 1rem;
+
     &-icon {
       font-size: 3rem;
     }
@@ -282,5 +285,93 @@
     background-color: cadetblue;
     margin-bottom: 2rem;
     border-radius: 15px;
+  }
+}
+
+.contact {
+  font-family: var(--font-montserrat);
+  background-color: var(--color-3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  height: 550px;
+
+  &__profile {
+    &-title {
+      font-size: var(--font-size-intro);
+      line-height: 130%;
+      font-weight: bold;
+      padding: 5rem 0 1rem;
+    }
+    &-card {
+      padding: 1rem;
+      border: 1px solid gray;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border 0.5s linear;
+
+      &-img {
+        margin-right: 1rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+
+      &-text {
+        &-lg {
+          font-size: 24px;
+          font-weight: bold;
+          padding: 4px 0;
+        }
+
+        &-sm {
+          font-size: 14px;
+          color: gray;
+          padding-bottom: 4px;
+        }
+
+        a {
+          color: gray;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &-card:hover {
+      border: 0.5px solid var(--color);
+      transition: border 0.5s linear;
+    }
+  }
+
+  &__form {
+    border-radius: 50%;
+    background-color: var(--color);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-circle {
+      width: 350px;
+
+      input {
+        height: 4rem;
+        border-radius: 50px;
+        // background-color: #878787;
+        border: none;
+        color: #f4f3f8;
+        opacity: 0.5;
+      }
+
+      &-btn {
+        background-color: white;
+        height: 4rem;
+        border-radius: 50px;
+      }
+    }
   }
 }
